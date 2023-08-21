@@ -25,4 +25,7 @@ Instrucciones:
 - Agregar estilos en `styles.css` y vincularlo con el archivo `index.html`.
 - Guardar y visualizar la página en un navegador.
 - Objetivo de la actividad: Esta actividad tiene como objetivo que los estudiantes se familiaricen con la estructura básica del HTML, la incorporación de estilos con CSS y la visualización de su primera página web en un navegador.
+
+
+[Ver actividad](/web_basica)
 -------------
