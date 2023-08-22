@@ -54,3 +54,5 @@ Instrucciones:
 - Objetivo de la actividad: Familiarizar a los estudiantes con la creación, diseño, validación y procesamiento de formularios web, proporcionándoles una comprensión práctica de cómo funcionan los formularios y su interacción con el servidor.
 
 Nota: Esta actividad asume que los estudiantes tienen acceso a un entorno de servidor para realizar el procesamiento, ya sea local o en línea. Si no es el caso, se podría simplificar la actividad enfocándose únicamente en la creación y validación del formulario sin el procesamiento del servidor.
+
+[Ver actividad](/formulario_de_contacto)
