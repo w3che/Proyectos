@@ -1,8 +1,8 @@
 <?php
-$hostname = "localhost";
-$username = "root";
-$password = "";
-$database = "formulario";
+$hostname = "mysql-jcphp.alwaysdata.net";
+$username = "jcphp_parcial1";
+$password = "Pr0gr4m4c10nWEB";
+$database = "jcphp_dbcontactos";
 
 $connection = mysqli_connect($hostname, $username, $password, $database);
 
