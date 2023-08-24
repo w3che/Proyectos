@@ -56,6 +56,7 @@
                                             <th scope="col">Asunto</th>
                                             <th scope="col">Mensaje</th>
                                             <th scope="col"></th>
+                                            <th scope="col"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -72,6 +73,7 @@
                                             <td scope="row"><?php echo $fila['correo'];?></td>
                                             <td scope="row"><?php echo $fila['asunto'];?></td>
                                             <td scope="row"><?php echo $fila['mensaje'];?></td>
+                                            <td scope="row"><a href="./editar.php?id=<?php echo $fila['id_contacto'];?>">Editar</a></td>
                                             <td scope="row"><a href="./function/delete.php?id=<?php echo $fila['id_contacto'];?>">Eliminar</a></td>
                                         </tr>
                                         <?php $contador++;} ?>
