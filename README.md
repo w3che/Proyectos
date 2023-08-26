@@ -26,7 +26,7 @@ Instrucciones:
 - Guardar y visualizar la página en un navegador.
 - Objetivo de la actividad: Esta actividad tiene como objetivo que los estudiantes se familiaricen con la estructura básica del HTML, la incorporación de estilos con CSS y la visualización de su primera página web en un navegador.
 
-[Ver actividad](/P1A1 - web_basica)
+[Ver actividad](/P1A1%20-%20web_basica)
 
 -------------
 
@@ -55,4 +55,4 @@ Instrucciones:
 
 Nota: Esta actividad asume que los estudiantes tienen acceso a un entorno de servidor para realizar el procesamiento, ya sea local o en línea. Si no es el caso, se podría simplificar la actividad enfocándose únicamente en la creación y validación del formulario sin el procesamiento del servidor.
 
-[Ver actividad](/P1A2 - formulario_de_contacto)
+[Ver actividad](/P1A2%20-%20formulario_de_contacto)
