@@ -6,6 +6,7 @@
     <title>Formulario de contacto</title>
     <!-- Bootstrap CSS v5.3.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -73,8 +74,8 @@
                                             <td scope="row"><?php echo $fila['correo'];?></td>
                                             <td scope="row"><?php echo $fila['asunto'];?></td>
                                             <td scope="row"><?php echo $fila['mensaje'];?></td>
-                                            <td scope="row"><a href="./editar.php?id=<?php echo $fila['id_contacto'];?>">Editar</a></td>
-                                            <td scope="row"><a href="./function/delete.php?id=<?php echo $fila['id_contacto'];?>">Eliminar</a></td>
+                                            <td scope="row"><a class="btn btn-warning btn-sm" href="./editar.php?id=<?php echo $fila['id_contacto'];?>"><i class="bi bi-pencil-square"></i></a></td>
+                                            <td scope="row"><a class="btn btn-danger btn-sm" href="./function/delete.php?id=<?php echo $fila['id_contacto'];?>"><i class="bi bi-x-square"></i></a></td>
                                         </tr>
                                         <?php $contador++;} ?>
                                     </tbody>
