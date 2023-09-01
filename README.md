@@ -65,7 +65,7 @@ Nota: Esta actividad asume que los estudiantes tienen acceso a un entorno de ser
 
 ### Actividad 3
 
-**Desarrollo de una Pequeña Aplicación de Notas
+**Desarrollo de una Pequeña Aplicación de Notas**
 
 Descripción: Los estudiantes desarrollarán una aplicación web sencilla donde puedan añadir, visualizar, editar y eliminar notas. Las notas consistirán en un título y un cuerpo de texto.
 
