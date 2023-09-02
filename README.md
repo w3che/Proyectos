@@ -26,7 +26,7 @@ Instrucciones:
 - Guardar y visualizar la página en un navegador.
 - Objetivo de la actividad: Esta actividad tiene como objetivo que los estudiantes se familiaricen con la estructura básica del HTML, la incorporación de estilos con CSS y la visualización de su primera página web en un navegador.
 
-![](/capturas/web_basica.png)
+![](/Img/Actividad1.png)
 
 [Ver actividad](/P1A1%20-%20web_basica)
 
@@ -57,6 +57,30 @@ Instrucciones:
 
 Nota: Esta actividad asume que los estudiantes tienen acceso a un entorno de servidor para realizar el procesamiento, ya sea local o en línea. Si no es el caso, se podría simplificar la actividad enfocándose únicamente en la creación y validación del formulario sin el procesamiento del servidor.
 
-![](/capturas/formulario_de_contacto.png)
+![](/Img/Actividad2.png)
 
 [Ver actividad](/P1A2%20-%20formulario_de_contacto)
+
+-------------
+
+### Actividad 3
+
+**Desarrollo de una Pequeña Aplicación de Notas**
+
+Descripción: Los estudiantes desarrollarán una aplicación web sencilla donde puedan añadir, visualizar, editar y eliminar notas. Las notas consistirán en un título y un cuerpo de texto.
+
+Instrucciones:
+
+1. Configurar una base de datos local (por ejemplo, MySQL o SQLite) y diseñar una tabla para las notas.
+2. Crear una interfaz web que permita al usuario añadir una nueva nota.
+3. Mostrar todas las notas existentes en una lista o cuadrícula.
+4. Implementar la funcionalidad para editar y eliminar notas.
+5. Asegurarse de que todas las operaciones (añadir, visualizar, editar, eliminar) se reflejen en la base de datos.
+6. Implementar medidas básicas de seguridad, como la prevención de inyección SQL.
+Objetivo de la actividad: Esta actividad está diseñada para que los estudiantes entiendan la interacción entre una aplicación web y una base de datos. A través de esta experiencia práctica, deberían familiarizarse con las operaciones CRUD y la importancia de la gestión segura de datos.
+
+Nota: Es esencial que los estudiantes tengan acceso a un entorno donde puedan configurar y acceder a una base de datos, ya sea localmente o a través de un servicio en línea. Si el acceso a una base de datos no es viable, se podría considerar el uso de un sistema de almacenamiento basado en archivos o un enfoque más simplificado centrado solo en la lógica de la aplicación sin persistencia de datos real.
+
+![](/Img/Actividad3.png)
+
+[Ver actividad](/P1A3%20-%20Notas)
