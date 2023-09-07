@@ -84,3 +84,29 @@ Nota: Es esencial que los estudiantes tengan acceso a un entorno donde puedan co
 ![](/Img/Actividad3.png)
 
 [Ver actividad](/P1A3%20-%20Notas)
+
+-------------
+
+### Actividad 4
+
+**Construcción y Consumo de una API RESTful**
+
+Descripción: Los estudiantes construirán una sencilla API RESTful para gestionar un listado de libros (título, autor, año de publicación). Posteriormente, desarrollarán una interfaz web que consuma esta API para realizar operaciones CRUD en el listado de libros.
+
+Instrucciones:
+
+1. Diseñar y configurar una base de datos para almacenar el listado de libros.
+2. Desarrollar una API que exponga endpoints para:
+    - Listar todos los libros.
+    - Añadir un nuevo libro.
+    - Editar la información de un libro existente.
+    - Eliminar un libro.
+3. Implementar una interfaz web que consuma la API desarrollada:
+    - Mostrar una lista de todos los libros disponibles.
+    - Formulario para añadir/editar libros usando la API.
+Opción para eliminar libros.
+4. Implementar autenticación básica para proteger el acceso a la API (por ejemplo, usando tokens).
+5. Asegurarse de manejar errores adecuadamente tanto en la API como en la interfaz web (ejemplo: libro no encontrado, errores de servidor, etc.).
+Objetivo de la actividad: Familiarizar a los estudiantes con la construcción y consumo de APIs RESTful, permitiéndoles experimentar tanto el desarrollo del backend como la interacción desde el frontend. Además, reforzar conceptos de seguridad y autenticación en servicios web.
+
+Nota: La actividad propuesta es un proyecto más complejo que combina habilidades de semanas anteriores (gestión de datos) con el nuevo contenido de la semana. Es esencial asegurarse de que los estudiantes cuenten con las herramientas y recursos necesarios para desarrollar y probar APIs, como un entorno de desarrollo adecuado y herramientas como Postman o Insomnia para testear la API.
