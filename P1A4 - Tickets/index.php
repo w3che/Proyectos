@@ -19,8 +19,8 @@
         <div class="container h-100" style="padding-top: 15rem;">
             <div class="row justify-content-center align-items-center g-2">
                 <div class="col">
-                    <h2>Sistema de Tickets para la Gestión de Incidencias</h2>
-                    <p>Nuestra plataforma proporciona una solución eficaz para gestionar incidencias y problemas de manera organizada.</p>
+                    <h2 style="color:#E0FFFF">Sistema de Tickets para la Gestión de Incidencias</h2>
+                    <p style="color:#E0FFFF">Nuestra plataforma proporciona una solución eficaz para gestionar incidencias y problemas de manera organizada.</p>
                 </div>
                 <div class="col">
                     <div class="card">
