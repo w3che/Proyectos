@@ -28,10 +28,10 @@
                                         <br>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Clientes</th>
-                                            <th scope="col">Administradores</th>
-                                            <th scope="col">Areas</th>
-                                            <th scope="col">Niveles</th>
+                                            <th scope="col">Cliente</th>
+                                            <th scope="col">Administrador</th>
+                                            <th scope="col">Area</th>
+                                            <th scope="col">Nivel</th>
                                             <th scope="col">Estatus</th>
                                             <th scope="col">Fecha creacion</th>
                                             <th scope="col">Fecha cerrado</th>
@@ -51,8 +51,34 @@
                                             <td scope="row"><?php echo $fila['nombre_cliente'];?></td>
                                             <td scope="row"><?php echo $fila['nombre_administrador'];?></td>
                                             <td scope="row"><?php echo $fila['nombre_area'];?></td>
-                                            <td scope="row"><?php echo $fila['nombre_nivel'];?></td>
-                                            <td scope="row"><?php echo $fila['nombre_estatus'];?></td>
+                                            <td scope="row">
+                                                <?php
+                                                if ($fila['nombre_nivel'] == 'Urgente') {
+                                                    echo '<span class="badge bg-danger text-light">';
+                                                } elseif($fila['nombre_nivel'] == 'Alto'){
+                                                    echo '<span class="badge bg-warning text-dark">';
+                                                } elseif($fila['nombre_nivel'] == 'Medio'){
+                                                    echo '<span class="badge bg-info text-light">';
+                                                } elseif($fila['nombre_nivel'] == 'Bajo'){
+                                                    echo '<span class="badge bg-success text-light">';
+                                                }
+                                                echo $fila['nombre_nivel'].'</span>';
+                                                ?>
+                                            </td>
+                                            <td scope="row">
+                                                <?php
+                                                if ($fila['nombre_estatus'] == 'Cerrado') {
+                                                    echo '<span class="badge bg-success text-light">';
+                                                } elseif($fila['nombre_estatus'] == 'Pausado'){
+                                                    echo '<span class="badge bg-secondary text-dark">';
+                                                } elseif($fila['nombre_estatus'] == 'Proceso'){
+                                                    echo '<span class="badge bg-primary text-light">';
+                                                } elseif($fila['nombre_estatus'] == 'Abierto'){
+                                                    echo '<span class="badge bg-warning text-dark">';
+                                                }
+                                                echo $fila['nombre_estatus'].'</span>';
+                                                ?>
+                                            </td>
                                             <td scope="row"><?php echo $fila['fecha_creacion'];?></td>
                                             <td scope="row"><?php echo $fila['fecha_cerrado'];?></td>
                                             <td scope="row"><a class="" href="./view/update_form.php?id=<?php echo $fila['id_ticket'];?>"><i class="bi bi-eye-fill text-primary"></i></a></td>
