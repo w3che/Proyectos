@@ -25,7 +25,7 @@
         $ejecutar = mysqli_query($connection, $query);
         $clientes = mysqli_fetch_all($ejecutar, MYSQLI_ASSOC);
         ?>
-        <div class="container mt-5">
+        <div class="container mt-5" >
             <h2>Gestion de usuarios</h2>
             <br>
             <table class="table table-striped table-bordered">
@@ -45,13 +45,13 @@
                         <td><?php echo $cliente['nombre_cliente'] ?></td>
                         <td><?php echo $cliente['email'] ?></td>
                         <td>
-                            <a href="./view/update_form.php?id=<?php echo $cliente ['id_cliente'] ?>" class="btn btn-secondary">
+                            <a href="./view/update_form.php?id=<?php echo $cliente ['id_cliente'] ?>" class="btn btn-warning btn-sm">
                                 <i class="bi bi-pencil-square"></i>
                             </a>
                             
                         </td>
                         <td>
-                            <a href="../functions/delete.php?id=<?php echo $cliente ['id_cliente'] ?>" class="btn btn-danger">
+                            <a href="../functions/delete.php?id=<?php echo $cliente ['id_cliente'] ?>" class="btn btn-danger btn-sm">
                                 <i class="bi bi-trash"></i>
                             </a>
                         </td>

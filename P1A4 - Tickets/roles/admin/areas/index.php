@@ -56,7 +56,7 @@
                                             <td scope="row"><?php echo $contador;?></td>
                                             <td scope="row"><?php echo $fila['nombre_area'];?></td>
                                             <td scope="row"><a class="btn btn-warning btn-sm" href="./view/update_form.php?id=<?php echo $fila['id_area'];?>"><i class="bi bi-pencil-square"></i></a></td>
-                                            <td scope="row "><a class="btn btn-danger btn-sm" href="./functions/delete.php?id=<?php echo $fila['id_area'];?>"><i class="bi bi-x-square"></i></a></td>
+                                            <td scope="row "><a class="btn btn-danger btn-sm" href="./functions/delete.php?id=<?php echo $fila['id_area'];?>"><i class="bi bi-trash"></i></a></td>
                                         </tr>
                                         <?php $contador++;} ?>
                                     </tbody>
