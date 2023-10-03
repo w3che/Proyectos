@@ -87,26 +87,106 @@ Nota: Es esencial que los estudiantes tengan acceso a un entorno donde puedan co
 
 -------------
 
-### Actividad 4
+### Proyecto final
 
-**Construcción y Consumo de una API RESTful**
+# Sistema de Tickets para Gestión de Incidencias
 
-Descripción: Los estudiantes construirán una sencilla API RESTful para gestionar un listado de libros (título, autor, año de publicación). Posteriormente, desarrollarán una interfaz web que consuma esta API para realizar operaciones CRUD en el listado de libros.
+## Tecnologías Utilizadas
 
-Instrucciones:
+- PHP
+- MySQL
+- Bootstrap
 
-1. Diseñar y configurar una base de datos para almacenar el listado de libros.
-2. Desarrollar una API que exponga endpoints para:
-    - Listar todos los libros.
-    - Añadir un nuevo libro.
-    - Editar la información de un libro existente.
-    - Eliminar un libro.
-3. Implementar una interfaz web que consuma la API desarrollada:
-    - Mostrar una lista de todos los libros disponibles.
-    - Formulario para añadir/editar libros usando la API.
-Opción para eliminar libros.
-4. Implementar autenticación básica para proteger el acceso a la API (por ejemplo, usando tokens).
-5. Asegurarse de manejar errores adecuadamente tanto en la API como en la interfaz web (ejemplo: libro no encontrado, errores de servidor, etc.).
-Objetivo de la actividad: Familiarizar a los estudiantes con la construcción y consumo de APIs RESTful, permitiéndoles experimentar tanto el desarrollo del backend como la interacción desde el frontend. Además, reforzar conceptos de seguridad y autenticación en servicios web.
+## Características y Funcionalidades
 
-Nota: La actividad propuesta es un proyecto más complejo que combina habilidades de semanas anteriores (gestión de datos) con el nuevo contenido de la semana. Es esencial asegurarse de que los estudiantes cuenten con las herramientas y recursos necesarios para desarrollar y probar APIs, como un entorno de desarrollo adecuado y herramientas como Postman o Insomnia para testear la API.
+### Control de Accesos
+
+- Registro/Login para Administradores y Clientes.
+
+### Roles de Usuarios
+
+- Administradores
+- Clientes
+
+### Niveles de Incidencias
+
+- Baja - secondary
+- Media - primary
+- Alta - Warning
+- Urgente - Danger
+
+## Dashboards
+
+### Dashboard para Administradores
+
+- Ver tickets asignados.
+- Ver tickets cerrados.
+- Ver tickets pendientes.
+
+### Dashboard para Clientes
+
+- Ver tickets enviados.
+- Ver tickets respondidos.
+- Ver tickets cerrados.
+
+### Pagina para Responder a Tickets
+
+- Administradores y clientes pueden responder a tickets.
+
+---
+
+## Estructura de Base de Datos
+
+### Tablas
+
+1. `cliente`
+    - `id_cliente`: Identificador único para cada cliente.
+    - `nombre_cliente`: Nombre del cliente.
+    - `email`: Correo electrónico del cliente.
+    - `password`: Contraseña del cliente.
+
+2. `administrador`
+    - `id_administrador`: Identificador único para cada administrador.
+    - `nombre_administrador`: Nombre del administrador.
+    - `email`: Correo electrónico del administrador.
+    - `password`: Contraseña del administrador.
+    - `id_area`: Área a la que pertenece el administrador.
+
+3. `area`
+    - `id_area`: Identificador único para cada área.
+    - `nombre_area`: Nombre de la área.
+
+4. `nivel`
+    - `id_nivel`: Identificador único para cada nivel de incidencia.
+    - `nombre_nivel`: Nombre del nivel de incidencia (Baja, Media, Alta, Urgente).
+
+5. `estatus`
+    - `id_estatus`: Identificador único para cada estado del ticket.
+    - `nombre_estatus`: Nombre del estado del ticket (Abierto, Proceso, Pausado, Cerrado).
+
+6. `ticket`
+    - `id_ticket`: Identificador único para cada ticket.
+    - `id_cliente`: Cliente que creó el ticket.
+    - `id_administrador`: Administrador asignado al ticket.
+    - `id_area`: Área a la que se asignó el ticket.
+    - `incidencia`: Descripción de la incidencia.
+    - `id_nivel`: Nivel de urgencia de la incidencia.
+    - `id_estatus`: Estado actual del ticket.
+    - `fecha_creacion`: Fecha en que se creó el ticket.
+    - `fecha_cerrado`: Fecha en que se cerró el ticket.
+
+7. `comentario`
+    - `id_comentario`: Identificador único para cada comentario.
+    - `id_ticket`: Ticket al que está asociado el comentario.
+    - `comentario`: Texto del comentario.
+    - `fecha_creacion`: Fecha en que se creó el comentario.
+
+### Relaciones
+
+- Un `cliente` puede tener múltiples `tickets`, pero cada `ticket` pertenece a un único `cliente`.
+- Un `administrador` puede gestionar múltiples `tickets`, pero cada `ticket` puede ser gestionado por un solo `administrador`.
+- Cada `ticket` puede tener múltiples `comentarios`, pero cada `comentario` pertenece a un único `ticket`.
+- Cada `ticket` pertenece a una `área`, `nivel` y `estatus` específicos.
+
+![](/Img/tickets.png)
+[Ver actividad](/P1A4%20-%20Tickets)
